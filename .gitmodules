@@ -1,0 +1,4 @@
+[submodule "libraries/espressif"]
+	path = libraries/espressif
+	url = git@github.com:espressif/kicad-libraries.git
+	branch = legacy_kicad5
