@@ -1143,8 +1143,6 @@ Text GLabel 2550 7250 0    35   Input ~ 0
 RTS
 Text GLabel 2550 7050 0    35   Input ~ 0
 DTR
-Text Notes 2250 6450 0    31   ~ 0
-RTS should be connected to CHIP_PU\n\nDTR should be connected to GPIO9
 Text Notes 9950 4100 0    31   ~ 0
 TXD and RXD crossover intentional
 Wire Notes Line
@@ -1424,4 +1422,32 @@ Wire Wire Line
 	5900 7300 5900 7400
 Text Label 5900 7050 0    35   ~ 0
 YELLOW_LED_PU
+$Comp
+L Device:R_Small R8
+U 1 1 6332661E
+P 3200 6550
+F 0 "R8" H 3250 6650 35  0000 L CNN
+F 1 "10K" H 3250 6500 35  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3200 6550 50  0001 C CNN
+F 3 "~" H 3200 6550 50  0001 C CNN
+	1    3200 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR06
+U 1 1 63326CD9
+P 3200 6400
+F 0 "#PWR06" H 3200 6250 50  0001 C CNN
+F 1 "+3.3V" H 3200 6550 35  0000 C CNN
+F 2 "" H 3200 6400 50  0001 C CNN
+F 3 "" H 3200 6400 50  0001 C CNN
+	1    3200 6400
+	1    0    0    -1  
+$EndComp
+Text Notes 2100 6550 0    31   ~ 0
+GPIO2 should be pulled up\n\nRTS should be connected to CHIP_PU\n\nDTR should be connected to GPIO9
+Wire Wire Line
+	3200 6650 3400 6650
+Wire Wire Line
+	3200 6400 3200 6450
 $EndSCHEMATC
