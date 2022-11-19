@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name Espressif)(type Legacy)(uri ${KIPRJMOD}/libraries/espressif/libraries/Espressif.lib)(options "")(descr ""))
+  (lib (name "Espressif")(type "Legacy")(uri "${KIPRJMOD}/libraries/espressif/libraries/Espressif.lib")(options "")(descr ""))
+  (lib (name "esp32c3_devboard-rescue")(type "Legacy")(uri "${KIPRJMOD}/esp32c3_devboard-rescue.lib")(options "")(descr ""))
 )
