@@ -62,7 +62,7 @@ AR Path="/6383EF8B" Ref="SW?"  Part="1"
 AR Path="/63833C0B/6383EF8B" Ref="SW2"  Part="1" 
 F 0 "SW2" H 1500 6550 35  0000 C CNN
 F 1 "RST" H 1500 6350 35  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 1500 6600 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_CK_RS282G05A3" H 1500 6600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/lcsc/2002271431_XKB-Connectivity-TS-1187A-B-A-B_C318884.pdf" H 1500 6600 50  0001 C CNN
 F 4 "C318884" H 1500 6400 50  0001 C CNN "LCSC"
 	1    1500 6400
@@ -251,7 +251,7 @@ AR Path="/6383EFF6" Ref="SW?"  Part="1"
 AR Path="/63833C0B/6383EFF6" Ref="SW1"  Part="1" 
 F 0 "SW1" H 1500 6050 35  0000 C CNN
 F 1 "BOOT" H 1500 5850 35  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 1500 6100 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_CK_RS282G05A3" H 1500 6100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/lcsc/2002271431_XKB-Connectivity-TS-1187A-B-A-B_C318884.pdf" H 1500 6100 50  0001 C CNN
 F 4 "C318884" H 1500 5900 50  0001 C CNN "LCSC"
 	1    1500 5900
@@ -554,17 +554,13 @@ Text HLabel 7550 2000 0    35   Input ~ 0
 UART_TXD
 Text HLabel 7550 2100 0    35   Input ~ 0
 UART_RXD
-Wire Wire Line
-	9650 2300 9500 2300
-Wire Wire Line
-	9650 2450 9500 2450
-Text HLabel 9650 2300 2    35   Input ~ 0
+Text HLabel 9275 2300 0    35   Input ~ 0
 UART_DTR
-Text HLabel 9650 2450 2    35   Input ~ 0
+Text HLabel 9275 3000 0    35   Input ~ 0
 UART_RTS
 Text Label 1800 5900 0    35   ~ 0
 GPIO9
-Text Label 9500 2300 2    35   ~ 0
+Text Label 10475 3200 0    35   ~ 0
 GPIO9
 Text Label 1650 3050 2    35   ~ 0
 GPIO9
@@ -576,7 +572,7 @@ Text Label 7550 2400 2    35   ~ 0
 GPIO8
 Text Label 1150 2950 2    35   ~ 0
 GPIO8
-Text Label 9500 2450 2    35   ~ 0
+Text Label 10475 2100 0    35   ~ 0
 ~RST
 Text Label 1350 1250 2    35   ~ 0
 ~RST
@@ -646,4 +642,78 @@ Wire Notes Line
 	11200 500  11200 4700
 Wire Notes Line
 	2500 4700 2500 7750
+$Comp
+L Transistor_BJT:S8050 Q1
+U 1 1 63DDD419
+P 9975 2300
+F 0 "Q1" H 10165 2346 50  0000 L CNN
+F 1 "S8050" H 10165 2255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10175 2225 50  0001 L CIN
+F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 9975 2300 50  0001 L CNN
+F 4 "C2146" H 9975 2300 50  0001 C CNN "LCSC"
+	1    9975 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:S8050 Q2
+U 1 1 63DDD9FC
+P 9975 3000
+F 0 "Q2" H 10165 2954 50  0000 L CNN
+F 1 "S8050" H 10165 3045 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10175 2925 50  0001 L CIN
+F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 9975 3000 50  0001 L CNN
+F 4 "C2146" H 9975 3000 50  0001 C CNN "LCSC"
+	1    9975 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 63DE663C
+P 9675 3000
+AR Path="/63DE663C" Ref="R?"  Part="1" 
+AR Path="/63833C0B/63DE663C" Ref="R15"  Part="1" 
+F 0 "R15" V 9750 2975 35  0000 L CNN
+F 1 "10K" V 9600 2950 35  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9675 3000 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 9675 3000 50  0001 C CNN
+F 4 "C25744" H 9675 3000 50  0001 C CNN "LCSC"
+	1    9675 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 63DE8970
+P 9675 2300
+AR Path="/63DE8970" Ref="R?"  Part="1" 
+AR Path="/63833C0B/63DE8970" Ref="R14"  Part="1" 
+F 0 "R14" V 9750 2275 35  0000 L CNN
+F 1 "10K" V 9600 2250 35  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9675 2300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 9675 2300 50  0001 C CNN
+F 4 "C25744" H 9675 2300 50  0001 C CNN "LCSC"
+	1    9675 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9525 2300 9525 2800
+Wire Wire Line
+	9525 2800 10075 2800
+Connection ~ 9525 2300
+Wire Wire Line
+	9525 2300 9575 2300
+Wire Wire Line
+	9275 2300 9525 2300
+Wire Wire Line
+	9275 3000 9400 3000
+Wire Wire Line
+	9400 2500 9400 3000
+Wire Wire Line
+	9400 2500 10075 2500
+Connection ~ 9400 3000
+Wire Wire Line
+	9400 3000 9575 3000
+Wire Wire Line
+	10075 3200 10475 3200
+Wire Wire Line
+	10075 2100 10475 2100
 $EndSCHEMATC

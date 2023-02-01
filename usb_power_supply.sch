@@ -263,104 +263,12 @@ F 3 "~" H 3900 1650 50  0001 C CNN
 	1    3900 1650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 6382D0A1
-P 10050 1600
-AR Path="/6382D0A1" Ref="TP?"  Part="1" 
-AR Path="/63818815/6382D0A1" Ref="TP1"  Part="1" 
-F 0 "TP1" V 10150 1700 35  0000 C CNN
-F 1 "TP_5V" V 9950 1700 35  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10250 1600 50  0001 C CNN
-F 3 "~" H 10250 1600 50  0001 C CNN
-	1    10050 1600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 6382D0A7
-P 10050 1900
-AR Path="/6382D0A7" Ref="TP?"  Part="1" 
-AR Path="/63818815/6382D0A7" Ref="TP2"  Part="1" 
-F 0 "TP2" V 10150 2000 35  0000 C CNN
-F 1 "TP_3V3" V 9950 2000 35  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10250 1900 50  0001 C CNN
-F 3 "~" H 10250 1900 50  0001 C CNN
-	1    10050 1900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10050 1600 10250 1600
-$Comp
-L power:+3.3V #PWR?
-U 1 1 6382D0AE
-P 10250 1900
-AR Path="/6382D0AE" Ref="#PWR?"  Part="1" 
-AR Path="/63818815/6382D0AE" Ref="#PWR050"  Part="1" 
-F 0 "#PWR050" H 10250 1750 50  0001 C CNN
-F 1 "+3.3V" H 10250 2050 35  0000 C CNN
-F 2 "" H 10250 1900 50  0001 C CNN
-F 3 "" H 10250 1900 50  0001 C CNN
-	1    10250 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10050 1900 10250 1900
-Text Notes 10750 3500 0    47   ~ 9
-Test points
-$Comp
-L power:+5V #PWR?
-U 1 1 6382D0B8
-P 10250 1600
-AR Path="/6382D0B8" Ref="#PWR?"  Part="1" 
-AR Path="/63818815/6382D0B8" Ref="#PWR049"  Part="1" 
-F 0 "#PWR049" H 10250 1450 50  0001 C CNN
-F 1 "+5V" H 10250 1750 35  0000 C CNN
-F 2 "" H 10250 1600 50  0001 C CNN
-F 3 "" H 10250 1600 50  0001 C CNN
-	1    10250 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6382D0BE
-P 10250 2200
-AR Path="/6382D0BE" Ref="#PWR?"  Part="1" 
-AR Path="/63818815/6382D0BE" Ref="#PWR051"  Part="1" 
-F 0 "#PWR051" H 10250 1950 50  0001 C CNN
-F 1 "GND" H 10250 2050 35  0000 C CNN
-F 2 "" H 10250 2200 50  0001 C CNN
-F 3 "" H 10250 2200 50  0001 C CNN
-	1    10250 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 6382D0C4
-P 10050 2200
-AR Path="/6382D0C4" Ref="TP?"  Part="1" 
-AR Path="/63818815/6382D0C4" Ref="TP3"  Part="1" 
-F 0 "TP3" V 10150 2300 35  0000 C CNN
-F 1 "TP_GND" V 9950 2300 35  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10250 2200 50  0001 C CNN
-F 3 "~" H 10250 2200 50  0001 C CNN
-	1    10050 2200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10050 2200 10250 2200
 Text HLabel 1900 1850 2    35   Input ~ 0
 USB_D+
 Text HLabel 1900 1950 2    35   Input ~ 0
 USB_D-
 Text Notes 8050 3500 0    47   ~ 9
 USB ESD protection
-Wire Notes Line
-	500  500  11200 500 
-Wire Notes Line
-	11200 500  11200 3500
-Wire Notes Line
-	11200 3500 500  3500
 Wire Notes Line
 	500  500  500  3500
 Wire Notes Line
@@ -400,4 +308,8 @@ Text HLabel 7100 1700 0    35   Input ~ 0
 USB_D-
 Text HLabel 8100 1900 2    35   Input ~ 0
 USB_D-
+Wire Notes Line
+	500  500  8800 500 
+Wire Notes Line
+	8800 3500 500  3500
 $EndSCHEMATC
