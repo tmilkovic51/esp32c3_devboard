@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 4 5
 Title "USB connector and power suply"
 Date "2022-11-20"
 Rev "1.0"
@@ -13,20 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector:USB_B_Micro J?
-U 1 1 63828FBE
-P 1600 1850
-AR Path="/63828FBE" Ref="J?"  Part="1" 
-AR Path="/63818815/63828FBE" Ref="J3"  Part="1" 
-F 0 "J3" H 1750 2200 35  0000 C CNN
-F 1 "Micro_USB" H 1750 1500 35  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 1750 1800 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/2201121330_DEALON-USB-MR-D-025_C2926996.pdf" H 1750 1800 50  0001 C CNN
-F 4 "C2926996" H 1600 1850 50  0001 C CNN "LCSC"
-	1    1600 1850
-	1    0    0    -1  
-$EndComp
 $Comp
 L Regulator_Linear:AMS1117-3.3 U?
 U 1 1 63828FC7
@@ -41,7 +27,6 @@ F 4 "C6186" H 4550 1650 50  0001 C CNN "LCSC"
 	1    4550 1650
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1900 2050
 Text Notes 2300 3500 0    47   ~ 9
 USB connector
 $Comp
@@ -113,20 +98,6 @@ F 3 "" H 4050 1650 50  0001 C CNN
 	1    4050 1650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Ferrite_Bead_Small FB?
-U 1 1 63828FFE
-P 3750 1650
-AR Path="/63828FFE" Ref="FB?"  Part="1" 
-AR Path="/63818815/63828FFE" Ref="FB1"  Part="1" 
-F 0 "FB1" V 3650 1700 35  0000 C CNN
-F 1 "100Ω @ 100MHz" V 3850 1600 35  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" V 3680 1650 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/2111221630_Sunlord-GZ2012D101TF_C1015.pdf" H 3750 1650 50  0001 C CNN
-F 4 "C1015" V 3750 1650 50  0001 C CNN "LCSC"
-	1    3750 1650
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4850 1650 5050 1650
 Connection ~ 5050 1650
@@ -134,19 +105,6 @@ Wire Wire Line
 	4250 1650 4050 1650
 Text Notes 5650 3500 0    47   ~ 9
 5V to 3.3V LDO
-$Comp
-L power:GND #PWR?
-U 1 1 63829008
-P 1600 2250
-AR Path="/63829008" Ref="#PWR?"  Part="1" 
-AR Path="/63818815/63829008" Ref="#PWR042"  Part="1" 
-F 0 "#PWR042" H 1600 2000 50  0001 C CNN
-F 1 "GND" H 1600 2100 35  0000 C CNN
-F 2 "" H 1600 2250 50  0001 C CNN
-F 3 "" H 1600 2250 50  0001 C CNN
-	1    1600 2250
-	1    0    0    -1  
-$EndComp
 Text Label 5550 1950 0    31   ~ 0
 PWR_LED_A
 Wire Wire Line
@@ -248,40 +206,20 @@ F 3 "" H 7600 1300 50  0001 C CNN
 	1    7600 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3850 1650 3900 1650
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 63829049
-P 3900 1650
-AR Path="/63829049" Ref="#FLG?"  Part="1" 
-AR Path="/63818815/63829049" Ref="#FLG01"  Part="1" 
-F 0 "#FLG01" H 3900 1725 50  0001 C CNN
-F 1 "PWR_FLAG" H 3900 1812 35  0001 C CNN
-F 2 "" H 3900 1650 50  0001 C CNN
-F 3 "~" H 3900 1650 50  0001 C CNN
-	1    3900 1650
-	1    0    0    -1  
-$EndComp
-Text HLabel 1900 1850 2    35   Input ~ 0
-USB_D+
-Text HLabel 1900 1950 2    35   Input ~ 0
-USB_D-
+Text HLabel 2025 2075 2    35   Input ~ 0
+CONN_USB_D+
+Text HLabel 2025 1875 2    35   Input ~ 0
+CONN_USB_D-
 Text Notes 8050 3500 0    47   ~ 9
 USB ESD protection
 Wire Notes Line
 	500  500  500  3500
 Wire Notes Line
-	2900 3500 2900 500 
+	3075 3500 3075 500 
 Wire Notes Line
 	6250 3500 6250 500 
 Wire Notes Line
 	8800 3500 8800 500 
-Wire Wire Line
-	3900 1650 4050 1650
-Connection ~ 3900 1650
-Wire Wire Line
-	3650 1650 3550 1650
 Wire Wire Line
 	5050 1650 5550 1650
 Connection ~ 5550 1650
@@ -291,13 +229,6 @@ Connection ~ 5050 2150
 Connection ~ 5550 2150
 Text Notes 5300 2500 0    35   ~ 0
 ~~1.8 mA LED current
-Text Notes 3350 2500 0    35   ~ 0
-USB host side capacitance limited to <= 10uF\nin order to conform to the USB specification
-NoConn ~ 1500 2250
-Text Label 1900 1650 0    35   ~ 0
-5V_USB
-Text Label 3550 1650 2    35   ~ 0
-5V_USB
 Text Notes 6950 2600 0    35   ~ 0
 Data lines connected to two pins for easier routing
 Text HLabel 8100 1700 2    35   Input ~ 0
@@ -312,4 +243,118 @@ Wire Notes Line
 	500  500  8800 500 
 Wire Notes Line
 	8800 3500 500  3500
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J4
+U 1 1 67B105B1
+P 1350 1925
+F 0 "J4" H 1700 2675 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1900 1175 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11" H 1500 1925 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1500 1925 50  0001 C CNN
+	1    1350 1925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2025 1950 2075
+Wire Wire Line
+	1950 2075 2025 2075
+Wire Wire Line
+	1950 2125 1950 2075
+Connection ~ 1950 2075
+Wire Wire Line
+	1950 1825 1950 1875
+Wire Wire Line
+	1950 1875 2025 1875
+Connection ~ 1950 1875
+Wire Wire Line
+	1950 1875 1950 1925
+$Comp
+L power:GND #PWR?
+U 1 1 67B14967
+P 1350 2825
+AR Path="/67B14967" Ref="#PWR?"  Part="1" 
+AR Path="/63818815/67B14967" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 1350 2575 50  0001 C CNN
+F 1 "GND" H 1350 2675 35  0000 C CNN
+F 2 "" H 1350 2825 50  0001 C CNN
+F 3 "" H 1350 2825 50  0001 C CNN
+	1    1350 2825
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1050 2825
+NoConn ~ 1950 2425
+NoConn ~ 1950 2525
+Wire Wire Line
+	2525 1825 2525 1850
+Text Notes 3350 2500 0    35   ~ 0
+USB host side capacitance limited to <= 10uF\nin order to conform to the USB2.0 specification
+$Comp
+L power:+5V #PWR?
+U 1 1 67B51707
+P 1950 1325
+AR Path="/67B51707" Ref="#PWR?"  Part="1" 
+AR Path="/63818815/67B51707" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 1950 1175 50  0001 C CNN
+F 1 "+5V" H 1950 1475 35  0000 C CNN
+F 2 "" H 1950 1325 50  0001 C CNN
+F 3 "" H 1950 1325 50  0001 C CNN
+	1    1950 1325
+	1    0    0    -1  
+$EndComp
+Connection ~ 2650 1850
+Wire Wire Line
+	2750 1850 2750 1825
+Wire Wire Line
+	2650 1850 2750 1850
+Wire Wire Line
+	2650 1850 2650 1900
+Wire Wire Line
+	2525 1850 2650 1850
+$Comp
+L power:GND #PWR?
+U 1 1 67B3CF8A
+P 2650 1900
+AR Path="/67B3CF8A" Ref="#PWR?"  Part="1" 
+AR Path="/63818815/67B3CF8A" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 2650 1650 50  0001 C CNN
+F 1 "GND" H 2650 1750 35  0000 C CNN
+F 2 "" H 2650 1900 50  0001 C CNN
+F 3 "" H 2650 1900 50  0001 C CNN
+	1    2650 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1525 2750 1625
+$Comp
+L Device:R_Small R?
+U 1 1 67B3BFCC
+P 2750 1725
+AR Path="/67B3BFCC" Ref="R?"  Part="1" 
+AR Path="/63818815/67B3BFCC" Ref="R22"  Part="1" 
+F 0 "R22" H 2800 1775 35  0000 L CNN
+F 1 "5K1" H 2800 1675 35  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2750 1725 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" H 2750 1725 50  0001 C CNN
+F 4 "C21190" H 2750 1725 50  0001 C CNN "LCSC"
+	1    2750 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 67B3A44D
+P 2525 1725
+AR Path="/67B3A44D" Ref="R?"  Part="1" 
+AR Path="/63818815/67B3A44D" Ref="R21"  Part="1" 
+F 0 "R21" H 2575 1775 35  0000 L CNN
+F 1 "5K1" H 2575 1675 35  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2525 1725 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" H 2525 1725 50  0001 C CNN
+F 4 "C21190" H 2525 1725 50  0001 C CNN "LCSC"
+	1    2525 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1625 2525 1625
+Wire Wire Line
+	1950 1525 2750 1525
 $EndSCHEMATC

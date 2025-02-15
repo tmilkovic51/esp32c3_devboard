@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 5 5
 Title "USB-UART bridge"
 Date "2022-11-20"
 Rev "1.0"
@@ -36,18 +36,18 @@ F 4 "C3035748" H 2800 2800 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Text HLabel 2400 2700 0    35   Input ~ 0
-UART_USB_D+
+USB_UART_D+
 Text HLabel 2400 2800 0    35   Input ~ 0
-UART_USB_D-
+USB_UART_D-
 Text HLabel 2100 2900 0    35   Input ~ 0
-UART_DTR
+USB_UART_DTR
 Text HLabel 3200 3200 2    35   Input ~ 0
-UART_RTS
+USB_UART_RTS
 NoConn ~ 3200 2700
 Text HLabel 3200 2500 2    35   Input ~ 0
-UART_RXD
+USB_UART_RXD
 Text HLabel 3200 2400 2    35   Input ~ 0
-UART_TXD
+USB_UART_TXD
 $Comp
 L power:GND #PWR?
 U 1 1 63DBCCD4

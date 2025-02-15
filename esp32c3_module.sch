@@ -14,34 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Espressif:ESP32-C3-MINI-1 U?
-U 1 1 6383EF6D
-P 2700 2700
-AR Path="/6383EF6D" Ref="U?"  Part="1" 
-AR Path="/63833C0B/6383EF6D" Ref="U3"  Part="1" 
-F 0 "U3" H 3650 4000 35  0000 C CNN
-F 1 "ESP32-C3-MINI-1" H 2700 1500 35  0000 C CNN
-F 2 "Espressif:ESP32-C3-MINI-1" H 2700 1400 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf" H 250 1400 50  0001 C CNN
-F 4 "C2838502" H 2700 2700 50  0001 C CNN "LCSC"
-	1    2700 2700
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3800 1850
-NoConn ~ 3800 1950
-NoConn ~ 3800 2050
-NoConn ~ 3800 2150
-NoConn ~ 3800 2250
-NoConn ~ 3800 2350
-NoConn ~ 3800 2450
-NoConn ~ 3800 2550
-NoConn ~ 3800 2650
-NoConn ~ 3800 2750
-NoConn ~ 3800 2850
-NoConn ~ 3800 2950
-NoConn ~ 3800 3050
-NoConn ~ 3800 3150
-$Comp
 L power:GND #PWR?
 U 1 1 6383EF81
 P 3850 3850
@@ -200,47 +172,6 @@ Connection ~ 1200 3750
 Wire Wire Line
 	1400 3750 1650 3750
 Connection ~ 1400 3750
-$Comp
-L Device:LED_Small D?
-U 1 1 6383EFD4
-P 3400 6450
-AR Path="/6383EFD4" Ref="D?"  Part="1" 
-AR Path="/63833C0B/6383EFD4" Ref="D1"  Part="1" 
-F 0 "D1" V 3450 6400 35  0000 R CNN
-F 1 "USR_LED" V 3350 6400 35  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 3400 6450 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf" V 3400 6450 50  0001 C CNN
-F 4 "C72041" V 3400 6450 50  0001 C CNN "LCSC"
-	1    3400 6450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 6383EFDB
-P 3400 6100
-AR Path="/6383EFDB" Ref="R?"  Part="1" 
-AR Path="/63833C0B/6383EFDB" Ref="R19"  Part="1" 
-F 0 "R19" H 3450 6200 35  0000 L CNN
-F 1 "470Ω" H 3450 6050 35  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3400 6100 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4700T5E_C23179.pdf" H 3400 6100 50  0001 C CNN
-F 4 "C23179" H 3400 6100 50  0001 C CNN "LCSC"
-	1    3400 6100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6383EFED
-P 3400 6650
-AR Path="/6383EFED" Ref="#PWR?"  Part="1" 
-AR Path="/63833C0B/6383EFED" Ref="#PWR036"  Part="1" 
-F 0 "#PWR036" H 3400 6400 50  0001 C CNN
-F 1 "GND" H 3400 6500 35  0000 C CNN
-F 2 "" H 3400 6650 50  0001 C CNN
-F 3 "" H 3400 6650 50  0001 C CNN
-	1    3400 6650
-	1    0    0    -1  
-$EndComp
 Text Notes 3450 4700 0    47   ~ 9
 ESP32-C3-MINI-1 module
 $Comp
@@ -272,66 +203,31 @@ F 3 "" H 1200 6000 50  0001 C CNN
 $EndComp
 Text Notes 4100 7750 0    47   ~ 9
 User LED
-Wire Wire Line
-	3400 5900 3400 6000
-Wire Wire Line
-	3400 6200 3400 6350
-Wire Wire Line
-	3400 6550 3400 6650
 $Comp
 L Device:R_Small R?
 U 1 1 6383F00A
-P 1250 1950
+P 1250 2150
 AR Path="/6383F00A" Ref="R?"  Part="1" 
 AR Path="/63833C0B/6383F00A" Ref="R16"  Part="1" 
-F 0 "R16" H 1300 2050 35  0000 L CNN
-F 1 "10K" H 1300 1900 35  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1250 1950 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 1250 1950 50  0001 C CNN
-F 4 "C25744" H 1250 1950 50  0001 C CNN "LCSC"
-	1    1250 1950
+F 0 "R16" H 1300 2250 35  0000 L CNN
+F 1 "10K" H 1300 2100 35  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1250 2150 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 1250 2150 50  0001 C CNN
+F 4 "C25744" H 1250 2150 50  0001 C CNN "LCSC"
+	1    1250 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 6383F010
-P 1250 1850
+P 1250 2050
 AR Path="/6383F010" Ref="#PWR?"  Part="1" 
 AR Path="/63833C0B/6383F010" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 1250 1700 50  0001 C CNN
-F 1 "+3.3V" H 1250 2000 35  0000 C CNN
-F 2 "" H 1250 1850 50  0001 C CNN
-F 3 "" H 1250 1850 50  0001 C CNN
-	1    1250 1850
-	1    0    0    -1  
-$EndComp
-Text Label 3400 6350 0    31   ~ 0
-USR_LED_A
-$Comp
-L Device:R_Small R?
-U 1 1 6383F018
-P 1250 2850
-AR Path="/6383F018" Ref="R?"  Part="1" 
-AR Path="/63833C0B/6383F018" Ref="R17"  Part="1" 
-F 0 "R17" H 1300 2950 35  0000 L CNN
-F 1 "10K" H 1300 2800 35  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1250 2850 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 1250 2850 50  0001 C CNN
-F 4 "C25744" H 1250 2850 50  0001 C CNN "LCSC"
-	1    1250 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 6383F01E
-P 1250 2750
-AR Path="/6383F01E" Ref="#PWR?"  Part="1" 
-AR Path="/63833C0B/6383F01E" Ref="#PWR033"  Part="1" 
-F 0 "#PWR033" H 1250 2600 50  0001 C CNN
-F 1 "+3.3V" H 1250 2900 35  0000 C CNN
-F 2 "" H 1250 2750 50  0001 C CNN
-F 3 "" H 1250 2750 50  0001 C CNN
-	1    1250 2750
+F 0 "#PWR032" H 1250 1900 50  0001 C CNN
+F 1 "+3.3V" H 1250 2200 35  0000 C CNN
+F 2 "" H 1250 2050 50  0001 C CNN
+F 3 "" H 1250 2050 50  0001 C CNN
+	1    1250 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -340,12 +236,8 @@ Wire Wire Line
 	1700 5900 1800 5900
 Wire Wire Line
 	1200 6000 1200 5900
-Text Notes 3100 6500 0    30   ~ 0
-Blue LED
 Wire Wire Line
-	1250 2050 1650 2050
-Wire Wire Line
-	1250 2950 1650 2950
+	1250 2250 1650 2250
 Connection ~ 1550 1250
 Wire Wire Line
 	1300 6400 1200 6400
@@ -356,11 +248,8 @@ Wire Wire Line
 Wire Wire Line
 	1550 1200 1550 1250
 Wire Wire Line
-	1150 2950 1250 2950
-Connection ~ 1250 2950
-Wire Wire Line
-	1150 2050 1250 2050
-Connection ~ 1250 2050
+	1150 2250 1250 2250
+Connection ~ 1250 2250
 Wire Wire Line
 	1450 1850 1450 1250
 Wire Wire Line
@@ -369,22 +258,7 @@ Wire Wire Line
 	1450 1250 1350 1250
 Connection ~ 1450 1250
 Wire Wire Line
-	3850 3350 3800 3350
-Wire Wire Line
-	3800 3450 3850 3450
-Connection ~ 3850 3450
-Wire Wire Line
-	3850 3450 3850 3350
-Wire Wire Line
-	3800 3550 3850 3550
-Connection ~ 3850 3550
-Wire Wire Line
-	3850 3550 3850 3450
-Wire Wire Line
 	3800 3650 3850 3650
-Connection ~ 3850 3650
-Wire Wire Line
-	3850 3650 3850 3550
 Wire Wire Line
 	3800 3750 3850 3750
 Wire Wire Line
@@ -433,26 +307,11 @@ F 3 "" H 5450 3400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6000 3300 5450 3300
-Wire Wire Line
-	6000 3000 5450 3000
-Wire Wire Line
-	5450 3000 5450 3300
 Connection ~ 5450 3300
 Wire Wire Line
 	6000 1900 5450 1900
 Wire Wire Line
-	5450 1900 5450 2400
-Connection ~ 5450 3000
-Wire Wire Line
-	6000 2600 5450 2600
-Connection ~ 5450 2600
-Wire Wire Line
-	5450 2600 5450 3000
-Wire Wire Line
-	6000 2400 5450 2400
-Connection ~ 5450 2400
-Wire Wire Line
-	5450 2400 5450 2600
+	5450 1900 5450 2300
 $Comp
 L power:+3.3V #PWR?
 U 1 1 63843751
@@ -475,15 +334,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 2100 5700 2000
 Connection ~ 5700 2000
-Wire Wire Line
-	6000 3100 5550 3100
-Wire Wire Line
-	5550 3100 5550 1800
-Wire Wire Line
-	6000 3200 5550 3200
-Wire Wire Line
-	5550 3200 5550 3100
-Connection ~ 5550 3100
 $Comp
 L power:GND #PWR?
 U 1 1 63843767
@@ -503,26 +353,9 @@ Wire Wire Line
 	5450 3400 5450 3300
 Wire Wire Line
 	7000 3300 7000 3400
-Wire Wire Line
-	7550 3000 7000 3000
-Wire Wire Line
-	7000 3000 7000 3300
 Connection ~ 7000 3300
 Wire Wire Line
-	7550 2500 7000 2500
-Wire Wire Line
-	7000 2500 7000 3000
-Connection ~ 7000 3000
-Wire Wire Line
-	7550 2200 7000 2200
-Wire Wire Line
-	7000 2200 7000 2500
-Connection ~ 7000 2500
-Wire Wire Line
 	7550 1900 7000 1900
-Wire Wire Line
-	7000 1900 7000 2200
-Connection ~ 7000 2200
 Text Notes 8000 4700 0    47   ~ 9
 Pin headers
 $Comp
@@ -538,81 +371,69 @@ F 3 "" H 5550 1800 50  0001 C CNN
 	1    5550 1800
 	1    0    0    -1  
 $EndComp
-Text HLabel 1650 3250 0    35   Input ~ 0
-JTAG_USB_D+
-Text HLabel 1650 3150 0    35   Input ~ 0
-JTAG_USB_D-
-Text HLabel 1650 3450 0    35   Input ~ 0
-UART_RXD
-Text HLabel 1650 3550 0    35   Input ~ 0
-UART_TXD
-Text HLabel 7550 3100 0    35   Input ~ 0
-JTAG_USB_D-
-Text HLabel 7550 3200 0    35   Input ~ 0
-JTAG_USB_D+
-Text HLabel 7550 2000 0    35   Input ~ 0
-UART_TXD
-Text HLabel 7550 2100 0    35   Input ~ 0
-UART_RXD
+Text HLabel 4025 2450 2    35   Input ~ 0
+ESP32_USB_D+
+Text HLabel 4025 2350 2    35   Input ~ 0
+ESP32_USB_D-
+Text HLabel 4025 2050 2    35   Input ~ 0
+ESP32_UART_RXD
+Text HLabel 4025 2150 2    35   Input ~ 0
+ESP32_UART_TXD
 Text HLabel 9275 2300 0    35   Input ~ 0
-UART_DTR
+ESP32_UART_DTR
 Text HLabel 9275 3000 0    35   Input ~ 0
-UART_RTS
+ESP32_UART_RTS
 Text Label 1800 5900 0    35   ~ 0
 GPIO9
 Text Label 10475 3200 0    35   ~ 0
 GPIO9
-Text Label 1650 3050 2    35   ~ 0
+Text Label 1650 3150 2    35   ~ 0
 GPIO9
-Text Label 7550 2300 2    35   ~ 0
+Text Label 6000 3000 2    35   ~ 0
 GPIO9
-Text Label 3400 5900 1    35   ~ 0
-GPIO8
-Text Label 7550 2400 2    35   ~ 0
-GPIO8
-Text Label 1150 2950 2    35   ~ 0
+Text Label 6000 2900 2    35   ~ 0
 GPIO8
 Text Label 10475 2100 0    35   ~ 0
 ~RST
 Text Label 1350 1250 2    35   ~ 0
 ~RST
-Text Label 6000 2500 2    35   ~ 0
-~RST
-Text Label 1150 2050 2    35   ~ 0
-GPIO2
 Text Label 6000 2200 2    35   ~ 0
+~RST
+Text Label 1150 2250 2    35   ~ 0
 GPIO2
-Text Label 6000 2300 2    35   ~ 0
+Text Label 7550 2200 2    35   ~ 0
+GPIO2
+Text Label 7550 2300 2    35   ~ 0
 GPIO3
-Text Label 1650 2150 2    35   ~ 0
-GPIO3
-Text Label 1650 2250 2    35   ~ 0
-GPIO0
-Text Label 6000 2700 2    35   ~ 0
-GPIO0
-Text Label 6000 2800 2    35   ~ 0
-GPIO1
 Text Label 1650 2350 2    35   ~ 0
+GPIO3
+Text Label 1650 2050 2    35   ~ 0
+GPIO0
+Text Label 7550 2000 2    35   ~ 0
+GPIO0
+Text Label 7550 2100 2    35   ~ 0
 GPIO1
+Text Label 1650 2150 2    35   ~ 0
+GPIO1
+Text Label 1650 3250 2    35   ~ 0
+GPIO10
+Text Label 7550 2500 2    35   ~ 0
+GPIO10
+Text Label 6000 2700 2    35   ~ 0
+GPIO7
+Text Label 1650 2950 2    35   ~ 0
+GPIO7
 Text Label 1650 2450 2    35   ~ 0
-GPIO10
-Text Label 6000 2900 2    35   ~ 0
-GPIO10
-Text Label 7550 2600 2    35   ~ 0
-GPIO7
-Text Label 1650 2850 2    35   ~ 0
-GPIO7
+GPIO4
+Text Label 6000 2400 2    35   ~ 0
+GPIO4
 Text Label 1650 2550 2    35   ~ 0
-GPIO4
-Text Label 7550 2900 2    35   ~ 0
-GPIO4
-Text Label 1650 2650 2    35   ~ 0
 GPIO5
-Text Label 7550 2800 2    35   ~ 0
+Text Label 6000 2500 2    35   ~ 0
 GPIO5
-Text Label 7550 2700 2    35   ~ 0
+Text Label 6000 2600 2    35   ~ 0
 GPIO6
-Text Label 1650 2750 2    35   ~ 0
+Text Label 1650 2850 2    35   ~ 0
 GPIO6
 Text Label 1800 6400 0    35   ~ 0
 ~RST
@@ -624,18 +445,12 @@ Text Notes 2150 7750 0    47   ~ 9
 Buttons
 Text Notes 10800 4700 0    47   ~ 9
 Boot pins
-Text Notes 3600 6700 0    35   ~ 0
-~~1.8 mA LED current
 Wire Notes Line
 	11200 500  500  500 
 Wire Notes Line
 	500  4700 11200 4700
 Wire Notes Line
-	4500 7750 500  7750
-Wire Notes Line
 	500  500  500  7750
-Wire Notes Line
-	4500 500  4500 7750
 Wire Notes Line
 	8500 500  8500 4700
 Wire Notes Line
@@ -716,4 +531,158 @@ Wire Wire Line
 	10075 3200 10475 3200
 Wire Wire Line
 	10075 2100 10475 2100
+$Comp
+L Espressif:ESP32-C3-WROOM-02 U3
+U 1 1 67B1B263
+P 2700 2700
+F 0 "U3" H 2725 4115 50  0000 C CNN
+F 1 "ESP32-C3-WROOM-02" H 2725 4024 50  0000 C CNN
+F 2 "Espressif:ESP32-C3-WROOM-02" H 2700 1400 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf" H 250 1400 50  0001 C CNN
+	1    2700 2700
+	1    0    0    -1  
+$EndComp
+Text Label 1150 3050 2    35   ~ 0
+GPIO8
+Connection ~ 1250 3050
+Wire Wire Line
+	1150 3050 1250 3050
+Wire Wire Line
+	1250 3050 1650 3050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6383F01E
+P 1250 2850
+AR Path="/6383F01E" Ref="#PWR?"  Part="1" 
+AR Path="/63833C0B/6383F01E" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 1250 2700 50  0001 C CNN
+F 1 "+3.3V" H 1250 3000 35  0000 C CNN
+F 2 "" H 1250 2850 50  0001 C CNN
+F 3 "" H 1250 2850 50  0001 C CNN
+	1    1250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6383F018
+P 1250 2950
+AR Path="/6383F018" Ref="R?"  Part="1" 
+AR Path="/63833C0B/6383F018" Ref="R17"  Part="1" 
+F 0 "R17" H 1300 3050 35  0000 L CNN
+F 1 "10K" H 1300 2900 35  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1250 2950 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 1250 2950 50  0001 C CNN
+F 4 "C25744" H 1250 2950 50  0001 C CNN "LCSC"
+	1    1250 2950
+	1    0    0    -1  
+$EndComp
+Text Label 3800 2050 0    35   ~ 0
+GPIO20
+Text Label 3800 2150 0    35   ~ 0
+GPIO21
+Wire Wire Line
+	3800 2050 4025 2050
+Wire Wire Line
+	3800 2150 4025 2150
+Text Label 7550 2700 2    35   ~ 0
+GPIO20
+Text Label 7550 2800 2    35   ~ 0
+GPIO21
+Text Label 3800 2350 0    35   ~ 0
+GPIO18
+Text Label 3800 2450 0    35   ~ 0
+GPIO19
+Wire Wire Line
+	3800 2350 4025 2350
+Wire Wire Line
+	3800 2450 4025 2450
+Text Label 7550 3000 2    35   ~ 0
+GPIO18
+Text Label 7550 3100 2    35   ~ 0
+GPIO19
+$Comp
+L LED:WS2812B D1
+U 1 1 67B7102E
+P 3525 5950
+F 0 "D1" H 3675 6200 50  0000 L CNN
+F 1 "WS2812B" H 3600 5700 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3575 5650 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3625 5575 50  0001 L TNN
+	1    3525 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 67B72448
+P 3525 5650
+AR Path="/67B72448" Ref="#PWR?"  Part="1" 
+AR Path="/63833C0B/67B72448" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 3525 5500 50  0001 C CNN
+F 1 "+5V" H 3525 5800 35  0000 C CNN
+F 2 "" H 3525 5650 50  0001 C CNN
+F 3 "" H 3525 5650 50  0001 C CNN
+	1    3525 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 67B73827
+P 3525 6250
+AR Path="/67B73827" Ref="#PWR?"  Part="1" 
+AR Path="/63833C0B/67B73827" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 3525 6000 50  0001 C CNN
+F 1 "GND" H 3525 6100 35  0000 C CNN
+F 2 "" H 3525 6250 50  0001 C CNN
+F 3 "" H 3525 6250 50  0001 C CNN
+	1    3525 6250
+	1    0    0    -1  
+$EndComp
+Text Label 3225 5950 2    35   ~ 0
+GPIO8
+NoConn ~ 3825 5950
+Wire Wire Line
+	6000 2300 5450 2300
+Connection ~ 5450 2300
+Wire Wire Line
+	5450 2300 5450 2800
+Wire Wire Line
+	6000 2800 5450 2800
+Connection ~ 5450 2800
+Wire Wire Line
+	5450 2800 5450 3300
+Wire Wire Line
+	5550 1800 5550 3100
+Wire Wire Line
+	6000 3100 5550 3100
+Connection ~ 5550 3100
+Wire Wire Line
+	5550 3100 5550 3200
+Wire Wire Line
+	6000 3200 5550 3200
+Wire Wire Line
+	7000 1900 7000 2400
+Wire Wire Line
+	7550 2400 7000 2400
+Connection ~ 7000 2400
+Wire Wire Line
+	7000 2400 7000 2600
+Wire Wire Line
+	7550 2600 7000 2600
+Connection ~ 7000 2600
+Wire Wire Line
+	7000 2600 7000 2900
+Wire Wire Line
+	7550 2900 7000 2900
+Connection ~ 7000 2900
+Wire Wire Line
+	7000 2900 7000 3200
+Wire Wire Line
+	7550 3200 7000 3200
+Connection ~ 7000 3200
+Wire Wire Line
+	7000 3200 7000 3300
+Wire Notes Line
+	4825 7750 4825 500 
+Wire Notes Line
+	500  7750 4825 7750
 $EndSCHEMATC
