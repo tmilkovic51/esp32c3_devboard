@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 3 5
 Title "ESP32-C3 module"
 Date "2022-11-20"
 Rev "1.0"
@@ -537,7 +537,7 @@ U 1 1 67B1B263
 P 2700 2700
 F 0 "U3" H 2725 4115 50  0000 C CNN
 F 1 "ESP32-C3-WROOM-02" H 2725 4024 50  0000 C CNN
-F 2 "Espressif:ESP32-C3-WROOM-02" H 2700 1400 50  0001 C CNN
+F 2 "Espressif custom:ESP32-C3-WROOM-02-SOCKET" H 2700 1400 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf" H 250 1400 50  0001 C CNN
 	1    2700 2700
 	1    0    0    -1  

@@ -232,13 +232,13 @@ Text Notes 5300 2500 0    35   ~ 0
 Text Notes 6950 2600 0    35   ~ 0
 Data lines connected to two pins for easier routing
 Text HLabel 8100 1700 2    35   Input ~ 0
-USB_D+
+CONN_USB_D+
 Text HLabel 7100 1900 0    35   Input ~ 0
-USB_D+
+CONN_USB_D+
 Text HLabel 7100 1700 0    35   Input ~ 0
-USB_D-
+CONN_USB_D-
 Text HLabel 8100 1900 2    35   Input ~ 0
-USB_D-
+CONN_USB_D-
 Wire Notes Line
 	500  500  8800 500 
 Wire Notes Line
@@ -271,14 +271,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 67B14967
-P 1350 2825
+P 1350 2875
 AR Path="/67B14967" Ref="#PWR?"  Part="1" 
 AR Path="/63818815/67B14967" Ref="#PWR023"  Part="1" 
-F 0 "#PWR023" H 1350 2575 50  0001 C CNN
-F 1 "GND" H 1350 2675 35  0000 C CNN
-F 2 "" H 1350 2825 50  0001 C CNN
-F 3 "" H 1350 2825 50  0001 C CNN
-	1    1350 2825
+F 0 "#PWR023" H 1350 2625 50  0001 C CNN
+F 1 "GND" H 1350 2725 35  0000 C CNN
+F 2 "" H 1350 2875 50  0001 C CNN
+F 3 "" H 1350 2875 50  0001 C CNN
+	1    1350 2875
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1050 2825
@@ -291,14 +291,14 @@ USB host side capacitance limited to <= 10uF\nin order to conform to the USB2.0 
 $Comp
 L power:+5V #PWR?
 U 1 1 67B51707
-P 1950 1325
+P 2050 1325
 AR Path="/67B51707" Ref="#PWR?"  Part="1" 
 AR Path="/63818815/67B51707" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 1950 1175 50  0001 C CNN
-F 1 "+5V" H 1950 1475 35  0000 C CNN
-F 2 "" H 1950 1325 50  0001 C CNN
-F 3 "" H 1950 1325 50  0001 C CNN
-	1    1950 1325
+F 0 "#PWR024" H 2050 1175 50  0001 C CNN
+F 1 "+5V" H 2050 1475 35  0000 C CNN
+F 2 "" H 2050 1325 50  0001 C CNN
+F 3 "" H 2050 1325 50  0001 C CNN
+	1    2050 1325
 	1    0    0    -1  
 $EndComp
 Connection ~ 2650 1850
@@ -357,4 +357,30 @@ Wire Wire Line
 	1950 1625 2525 1625
 Wire Wire Line
 	1950 1525 2750 1525
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 67B3EC81
+P 1950 1325
+F 0 "#FLG0101" H 1950 1400 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 1498 50  0001 C CNN
+F 2 "" H 1950 1325 50  0001 C CNN
+F 3 "~" H 1950 1325 50  0001 C CNN
+	1    1950 1325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 67B3F8E1
+P 1350 2825
+F 0 "#FLG0102" H 1350 2900 50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 2998 50  0001 C CNN
+F 2 "" H 1350 2825 50  0001 C CNN
+F 3 "~" H 1350 2825 50  0001 C CNN
+	1    1350 2825
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 2875 1350 2825
+Wire Wire Line
+	1950 1325 2050 1325
 $EndSCHEMATC
