@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
 Title "USB-UART bridge"
-Date "2022-11-20"
+Date "2025-02-16"
 Rev "1.0"
 Comp "Copyright: Tomislav Milkovic"
 Comment1 ""
@@ -69,8 +69,8 @@ P 2250 1750
 F 0 "R13" H 2300 1850 35  0000 L CNN
 F 1 "1K" H 2300 1700 35  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 2250 1750 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF4701TCE_C25900.pdf" H 2250 1750 50  0001 C CNN
-F 4 "C25900" H 2250 1750 50  0001 C CNN "LCSC"
+F 3 "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf" H 2250 1750 50  0001 C CNN
+F 4 "C11702" H 2250 1750 50  0001 C CNN "LCSC"
 	1    2250 1750
 	1    0    0    -1  
 $EndComp
@@ -133,7 +133,7 @@ $Comp
 L Device:R_Small R19
 U 1 1 67B22DEB
 P 1750 2000
-F 0 "R19" H 1625 1950 35  0000 L CNN
+F 0 "R19" H 1600 1950 35  0000 L CNN
 F 1 "24K" H 1600 2050 35  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 1750 2000 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/lcsc/2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF2402TCE_C25769.pdf" H 1750 2000 50  0001 C CNN
@@ -182,9 +182,9 @@ U 1 1 67B22E12
 P 3600 1250
 F 0 "C15" H 3600 1300 35  0000 L CNN
 F 1 "10u" H 3650 1200 35  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3600 1250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3600 1250 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/lcsc/2004251506_Murata-Electronics-GRM21BR61H106KE43L_C440198.pdf" H 3600 1250 50  0001 C CNN
-F 4 "C440198" H 3600 1250 50  0001 C CNN "LCSC"
+F 4 "C19702" H 3600 1250 50  0001 C CNN "LCSC"
 	1    3600 1250
 	1    0    0    -1  
 $EndComp

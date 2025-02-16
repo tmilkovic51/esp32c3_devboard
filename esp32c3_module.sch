@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
 Title "ESP32-C3 module"
-Date "2022-11-20"
+Date "2025-02-16"
 Rev "1.0"
 Comp "Copyright: Tomislav Milkovic"
 Comment1 ""
@@ -36,7 +36,7 @@ F 0 "SW2" H 1500 6550 35  0000 C CNN
 F 1 "RST" H 1500 6350 35  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_CK_RS282G05A3" H 1500 6600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/lcsc/2002271431_XKB-Connectivity-TS-1187A-B-A-B_C318884.pdf" H 1500 6600 50  0001 C CNN
-F 4 "C318884" H 1500 6400 50  0001 C CNN "LCSC"
+F 4 "" H 1500 6400 50  0001 C CNN "LCSC"
 	1    1500 6400
 	1    0    0    -1  
 $EndComp
@@ -144,7 +144,7 @@ F 0 "C17" H 1200 3900 35  0000 L CNN
 F 1 "10u" H 1200 3800 35  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1200 3850 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/lcsc/2004251506_Murata-Electronics-GRM21BR61H106KE43L_C440198.pdf" H 1200 3850 50  0001 C CNN
-F 4 "C440198" H 1200 3850 50  0001 C CNN "LCSC"
+F 4 "C19702" H 1200 3850 50  0001 C CNN "LCSC"
 	1    1200 3850
 	1    0    0    -1  
 $EndComp
@@ -184,7 +184,7 @@ F 0 "SW1" H 1500 6050 35  0000 C CNN
 F 1 "BOOT" H 1500 5850 35  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_CK_RS282G05A3" H 1500 6100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/lcsc/2002271431_XKB-Connectivity-TS-1187A-B-A-B_C318884.pdf" H 1500 6100 50  0001 C CNN
-F 4 "C318884" H 1500 5900 50  0001 C CNN "LCSC"
+F 4 "" H 1500 5900 50  0001 C CNN "LCSC"
 	1    1500 5900
 	1    0    0    -1  
 $EndComp
@@ -201,7 +201,7 @@ F 3 "" H 1200 6000 50  0001 C CNN
 	1    1200 6000
 	1    0    0    -1  
 $EndComp
-Text Notes 4100 7750 0    47   ~ 9
+Text Notes 4450 7750 0    47   ~ 9
 User LED
 $Comp
 L Device:R_Small R?
@@ -276,6 +276,7 @@ F 0 "J2" H 7750 3400 35  0000 L CNN
 F 1 "Conn_01x15_Male" H 7550 1800 35  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 7750 2600 50  0001 C CNN
 F 3 "~" H 7750 2600 50  0001 C CNN
+F 4 "" H 7750 2600 50  0001 C CNN "LCSC"
 	1    7750 2600
 	1    0    0    -1  
 $EndComp
@@ -289,6 +290,7 @@ F 0 "J1" H 6200 3400 35  0000 L CNN
 F 1 "Conn_01x15_Male" H 6000 1800 35  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 6200 2600 50  0001 C CNN
 F 3 "~" H 6200 2600 50  0001 C CNN
+F 4 "" H 6200 2600 50  0001 C CNN "LCSC"
 	1    6200 2600
 	1    0    0    -1  
 $EndComp
@@ -464,7 +466,7 @@ P 9975 2300
 F 0 "Q1" H 10165 2346 50  0000 L CNN
 F 1 "S8050" H 10165 2255 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 10175 2225 50  0001 L CIN
-F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 9975 2300 50  0001 L CNN
+F 3 "https://www.lcsc.com/datasheet/lcsc_datasheet_2310131500_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--S8050-J3Y-RANGE-200-350_C2146.pdf" H 9975 2300 50  0001 L CNN
 F 4 "C2146" H 9975 2300 50  0001 C CNN "LCSC"
 	1    9975 2300
 	1    0    0    -1  
@@ -476,7 +478,7 @@ P 9975 3000
 F 0 "Q2" H 10165 2954 50  0000 L CNN
 F 1 "S8050" H 10165 3045 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 10175 2925 50  0001 L CIN
-F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 9975 3000 50  0001 L CNN
+F 3 "https://www.lcsc.com/datasheet/lcsc_datasheet_2310131500_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--S8050-J3Y-RANGE-200-350_C2146.pdf" H 9975 3000 50  0001 L CNN
 F 4 "C2146" H 9975 3000 50  0001 C CNN "LCSC"
 	1    9975 3000
 	1    0    0    1   
@@ -539,6 +541,7 @@ F 0 "U3" H 2725 4115 50  0000 C CNN
 F 1 "ESP32-C3-WROOM-02" H 2725 4024 50  0000 C CNN
 F 2 "Espressif custom:ESP32-C3-WROOM-02-SOCKET" H 2700 1400 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf" H 250 1400 50  0001 C CNN
+F 4 "" H 2700 2700 50  0001 C CNN "LCSC"
 	1    2700 2700
 	1    0    0    -1  
 $EndComp
@@ -604,10 +607,11 @@ $Comp
 L LED:WS2812B D1
 U 1 1 67B7102E
 P 3525 5950
-F 0 "D1" H 3675 6200 50  0000 L CNN
-F 1 "WS2812B" H 3600 5700 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3575 5650 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3625 5575 50  0001 L TNN
+F 0 "D1" H 3650 6200 50  0000 L CNN
+F 1 "WS2812C" H 3575 5700 50  0000 L CNN
+F 2 "LED_custom:LED_WS2812B_2.0x2.0mm_P1.13mm" H 3575 5650 50  0001 L TNN
+F 3 "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2202221130_Worldsemi-WS2812C-2020-V1_C2976072.pdf" H 3625 5575 50  0001 L TNN
+F 4 "C2976072" H 3525 5950 50  0001 C CNN "LCSC"
 	1    3525 5950
 	1    0    0    -1  
 $EndComp

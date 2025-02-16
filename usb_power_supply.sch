@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
 Title "USB connector and power suply"
-Date "2022-11-20"
+Date "2025-02-16"
 Rev "1.0"
 Comp "Copyright: Tomislav Milkovic"
 Comment1 ""
@@ -22,7 +22,7 @@ AR Path="/63818815/63828FC7" Ref="U4"  Part="1"
 F 0 "U4" H 4700 1750 35  0000 C CNN
 F 1 "AMS1117-3.3" H 4750 1400 35  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4550 1850 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1811142212_Advanced-Monolithic-Systems-AMS1117-3-3_C6186.pdf" H 4650 1400 50  0001 C CNN
+F 3 "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8550724073479806976" H 4650 1400 50  0001 C CNN
 F 4 "C6186" H 4550 1650 50  0001 C CNN "LCSC"
 	1    4550 1650
 	1    0    0    -1  
@@ -37,9 +37,9 @@ AR Path="/63828FD6" Ref="C?"  Part="1"
 AR Path="/63818815/63828FD6" Ref="C20"  Part="1" 
 F 0 "C20" H 4100 1950 35  0000 L CNN
 F 1 "10u" H 4100 1850 35  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4050 1900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1811031514_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf" H 4050 1900 50  0001 C CNN
-F 4 "C12891" H 4050 1900 50  0001 C CNN "LCSC"
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4050 1900 50  0001 C CNN
+F 3 "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf" H 4050 1900 50  0001 C CNN
+F 4 "C19702" H 4050 1900 50  0001 C CNN "LCSC"
 	1    4050 1900
 	1    0    0    -1  
 $EndComp
@@ -51,9 +51,9 @@ AR Path="/63828FDD" Ref="C?"  Part="1"
 AR Path="/63818815/63828FDD" Ref="C21"  Part="1" 
 F 0 "C21" H 5100 1950 35  0000 L CNN
 F 1 "10u" H 5100 1850 35  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5050 1900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1811031514_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf" H 5050 1900 50  0001 C CNN
-F 4 "C12891" H 5050 1900 50  0001 C CNN "LCSC"
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 1900 50  0001 C CNN
+F 3 "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf" H 5050 1900 50  0001 C CNN
+F 4 "C19702" H 5050 1900 50  0001 C CNN "LCSC"
 	1    5050 1900
 	1    0    0    -1  
 $EndComp
@@ -66,7 +66,7 @@ AR Path="/63818815/63828FE4" Ref="D2"  Part="1"
 F 0 "D2" V 5600 2000 35  0000 R CNN
 F 1 "PWR_LED" V 5500 2000 35  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" V 5550 2050 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf" V 5550 2050 50  0001 C CNN
+F 3 "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8550723991833485312" V 5550 2050 50  0001 C CNN
 F 4 "C2286" V 5550 2050 50  0001 C CNN "LCSC"
 	1    5550 2050
 	0    -1   -1   0   
@@ -79,9 +79,9 @@ AR Path="/63828FEB" Ref="R?"  Part="1"
 AR Path="/63818815/63828FEB" Ref="R20"  Part="1" 
 F 0 "R20" H 5600 1800 35  0000 L CNN
 F 1 "1K" H 5600 1700 35  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5550 1750 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" H 5550 1750 50  0001 C CNN
-F 4 "C21190" H 5550 1750 50  0001 C CNN "LCSC"
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5550 1750 50  0001 C CNN
+F 3 "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf" H 5550 1750 50  0001 C CNN
+F 4 "C11702" H 5550 1750 50  0001 C CNN "LCSC"
 	1    5550 1750
 	1    0    0    -1  
 $EndComp
@@ -188,7 +188,7 @@ AR Path="/63818815/6382903C" Ref="U5"  Part="1"
 F 0 "U5" H 7850 2250 35  0000 C CNN
 F 1 "SRV05-4" H 7850 1350 35  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8300 1350 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1809192313_ProTek-Devices-SRV05-4-P-T7_C85364.pdf" H 7600 1800 50  0001 C CNN
+F 3 "https://www.lcsc.com/datasheet/lcsc_datasheet_1809192313_ProTek-Devices-SRV05-4-P-T7_C85364.pdf" H 7600 1800 50  0001 C CNN
 F 4 "C85364" H 7600 1800 50  0001 C CNN "LCSC"
 	1    7600 1800
 	1    0    0    -1  
@@ -228,7 +228,7 @@ Wire Wire Line
 Connection ~ 5050 2150
 Connection ~ 5550 2150
 Text Notes 5300 2500 0    35   ~ 0
-~~1.8 mA LED current
+~~1.3 mA LED current
 Text Notes 6950 2600 0    35   ~ 0
 Data lines connected to two pins for easier routing
 Text HLabel 8100 1700 2    35   Input ~ 0
@@ -250,7 +250,8 @@ P 1350 1925
 F 0 "J4" H 1700 2675 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1900 1175 50  0000 C CNN
 F 2 "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11" H 1500 1925 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1500 1925 50  0001 C CNN
+F 3 "https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_SHOU-HAN-TYPE-C16PIN_C393939.pdf" H 1500 1925 50  0001 C CNN
+F 4 "C393939" H 1350 1925 50  0001 C CNN "LCSC"
 	1    1350 1925
 	1    0    0    -1  
 $EndComp
@@ -334,8 +335,8 @@ AR Path="/63818815/67B3BFCC" Ref="R22"  Part="1"
 F 0 "R22" H 2800 1775 35  0000 L CNN
 F 1 "5K1" H 2800 1675 35  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 2750 1725 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" H 2750 1725 50  0001 C CNN
-F 4 "C21190" H 2750 1725 50  0001 C CNN "LCSC"
+F 3 "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf" H 2750 1725 50  0001 C CNN
+F 4 "C25905" H 2750 1725 50  0001 C CNN "LCSC"
 	1    2750 1725
 	1    0    0    -1  
 $EndComp
@@ -348,8 +349,8 @@ AR Path="/63818815/67B3A44D" Ref="R21"  Part="1"
 F 0 "R21" H 2575 1775 35  0000 L CNN
 F 1 "5K1" H 2575 1675 35  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 2525 1725 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" H 2525 1725 50  0001 C CNN
-F 4 "C21190" H 2525 1725 50  0001 C CNN "LCSC"
+F 3 "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf" H 2525 1725 50  0001 C CNN
+F 4 "C25905" H 2525 1725 50  0001 C CNN "LCSC"
 	1    2525 1725
 	1    0    0    -1  
 $EndComp

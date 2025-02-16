@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title "ESP32-C3 Development board"
-Date "2022-11-20"
+Date "2025-02-16"
 Rev "1.0"
 Comp "Copyright: Tomislav Milkovic"
 Comment1 ""
