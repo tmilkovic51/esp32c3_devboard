@@ -246,4 +246,6 @@ Wire Wire Line
 	1600 2100 1750 2100
 Wire Wire Line
 	1600 2300 1750 2300
+Text Notes 1125 1200 0    35   ~ 0
+Internal regulator not used -> 3.3 V supplied externally
 $EndSCHEMATC

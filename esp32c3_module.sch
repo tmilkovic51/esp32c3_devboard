@@ -444,8 +444,6 @@ Wire Notes Line
 Wire Notes Line
 	500  500  500  7750
 Wire Notes Line
-	8500 500  8500 4700
-Wire Notes Line
 	11200 500  11200 4700
 Wire Notes Line
 	2500 4700 2500 7750
@@ -995,4 +993,43 @@ Wire Wire Line
 	3800 2050 4000 2050
 Wire Wire Line
 	3800 2150 4000 2150
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 67BA2381
+P 7625 5200
+F 0 "FID1" H 7710 5246 50  0000 L CNN
+F 1 "Fiducial" H 7710 5155 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 7625 5200 50  0001 C CNN
+F 3 "~" H 7625 5200 50  0001 C CNN
+	1    7625 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 67BA358A
+P 7625 5525
+F 0 "FID2" H 7710 5571 50  0000 L CNN
+F 1 "Fiducial" H 7710 5480 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 7625 5525 50  0001 C CNN
+F 3 "~" H 7625 5525 50  0001 C CNN
+	1    7625 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 67BA4000
+P 7625 5850
+F 0 "FID3" H 7710 5896 50  0000 L CNN
+F 1 "Fiducial" H 7710 5805 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 7625 5850 50  0001 C CNN
+F 3 "~" H 7625 5850 50  0001 C CNN
+	1    7625 5850
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8500 6525 6950 6525
+Wire Notes Line
+	8500 500  8500 6525
+Text Notes 8025 6525 0    47   ~ 9
+Fiducials
 $EndSCHEMATC

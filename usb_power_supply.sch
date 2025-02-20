@@ -229,8 +229,8 @@ Connection ~ 5050 2150
 Connection ~ 5550 2150
 Text Notes 5300 2500 0    35   ~ 0
 ~~1.3 mA LED current
-Text Notes 6950 2600 0    35   ~ 0
-Data lines connected to two pins for easier routing
+Text Notes 6950 2750 0    35   ~ 0
+Data lines connected to two pins for easier routing\n(additional capacity is insignificant for USB2.0 HS speeds)
 Text HLabel 8100 1700 2    35   Input ~ 0
 CONN_USB_D+
 Text HLabel 7100 1900 0    35   Input ~ 0

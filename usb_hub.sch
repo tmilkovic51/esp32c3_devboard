@@ -739,7 +739,7 @@ Strapping pins
 Text Notes 5500 2900 0    31   ~ 0
 OCS_N pins have internal pull-up resistors
 Text Notes 5500 3350 0    31   ~ 0
-If unused, downstream USB ports need to be pulled up
+If unused, downstream USB ports need to be pulled up to 3.3 V
 Wire Wire Line
 	8950 1550 8950 1800
 Wire Wire Line
