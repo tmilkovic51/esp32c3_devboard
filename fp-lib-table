@@ -1,3 +1,5 @@
 (fp_lib_table
   (lib (name Espressif)(type KiCad)(uri ${KIPRJMOD}/libraries/espressif/footprints/Espressif.pretty)(options "")(descr ""))
+  (lib (name Espressif_custom)(type KiCad)(uri ${KIPRJMOD}/libraries/espressif_custom/footprints/Espressif_custom.pretty)(options "")(descr ""))
+  (lib (name LED_custom)(type KiCad)(uri ${KIPRJMOD}/libraries/led_custom/footprints/LED_custom.pretty)(options "")(descr ""))
 )
