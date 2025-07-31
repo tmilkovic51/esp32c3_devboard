@@ -14,3 +14,6 @@ It also includes:
 
 ## PCB back:
 ![ESP32C3 devboard back](doc/img/pcb_back.png)
+
+## KiCAD version
+This project is compatible with KiCAD version v6.

@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name "Espressif")(type "Legacy")(uri "${KIPRJMOD}/libraries/espressif/libraries/Espressif.lib")(options "")(descr ""))
+  (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/libraries/espressif/libraries/Espressif.kicad_sym")(options "")(descr ""))
 )
